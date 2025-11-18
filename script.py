@@ -20,6 +20,8 @@ def parse_args():
                        help='Output directory where aggregated scores will be saved')
     parser.add_argument('--metrics.scores', type=str, nargs='+', required=True,
                        help='List of metric h5ad files to aggregate')
+    parser.add_argument('--name', type=str, required=False,
+                       help='Name argument (passed by omnibenchmark but not used)')
     return parser.parse_args()
 
 def main():
